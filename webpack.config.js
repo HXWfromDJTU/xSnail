@@ -7,7 +7,9 @@ module.exports = {
     //entry打包入口是从哪里开始
     entry:{
        main: './src/script/main.js',//这里对象的key,表示的是打包结果的chunk name
-       pageA:'./src/script/a.js'
+       pageA:'./src/script/pageA.js',
+        pageB:'./src/script/pageB.js',
+        pageC:'./src/script/pageC.js'
     },
     //output最常用的就是path和filename属性
     output:{
@@ -16,8 +18,19 @@ module.exports = {
    },
    plugins:[
       new htmlWebpackPlugin({
-          filename:'index-[hash].html',
-          template:'index.html'
-      })
+          filename:'index-A&b.html',
+          template:'index.html',
+          inject:"body",
+          title:'[name]',
+          chunks:["pageA,pageB"]
+      }),
+       new htmlWebpackPlugin({
+           filename:'index-Cs.html',
+           template:'index.html',
+           inject:"body",
+           title:'[name]',
+           chunks:["pageC"],
+           loader:["style-loader","css-loader"]
+       })
    ]
 }
