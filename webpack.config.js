@@ -9,7 +9,8 @@ module.exports = {
        main: './src/script/main.js',//这里对象的key,表示的是打包结果的chunk name
        pageA:'./src/script/pageA.js',
         pageB:'./src/script/pageB.js',
-        pageC:'./src/script/pageC.js'
+        pageC:'./src/script/pageC.js',
+        app:'./main.js'
     },
     //output最常用的就是path和filename属性
     output:{
@@ -31,6 +32,12 @@ module.exports = {
            title:'[name]',
            chunks:["pageC"],
            loader:["style-loader","css-loader"]
+       }),
+       new htmlWebpackPlugin({
+           filename:"index-app.html",
+           template:"index.html",
+           chunk:["app"],
+           inject:"head"
        })
    ]
 }

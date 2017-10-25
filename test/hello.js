@@ -1,5 +1,5 @@
 require('./world.js');
-require('style-loader!css-loader!./style.css');
+require('style-loader!css-loader!./../style.css');
 
 
 function  hello(str){

@@ -5,11 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack":"webpack --config webpack.config.js --progress --colors --watch"
+    "webpack": "webpack --config webpack.config.js --progress --colors --watch",
+    "xSnail": "node build/dev-server.js"
+  },
+  "dependencies": {
+    "better-scroll": "^0.1.15",
+    "fastclick": "^1.0.6",
+    "iscroll": "^5.2.0",
+    "showdown": "^1.6.4",
+    "vue": "^2.1.0",
+    "vue-router": "^2.1.1",
+    "vuex": "^2.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.2",
+    "webpack": "^3.7.1"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^3.7.1"
-  }
+  "license": "ISC"
 }
