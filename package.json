@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --config webpack.config.js --progress --colors --watch",
-    "xSnail": "node build/dev-server.js"
+    "xSnail": "node build/dev-server.js",
+    "lint":"eslint --ext .js,.vue src"
   },
   "dependencies": {
     "better-scroll": "^0.1.15",
