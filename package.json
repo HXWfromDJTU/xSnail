@@ -2,12 +2,12 @@
   "name": "elm",
   "version": "2.0.1",
   "description": "vue2-elm",
-  "author": "cangdu <1264889788@qq.com>",
+  "author": "<wongxuanwei@foxmail.com>",
   "private": true,
   "license": "GPL",
   "scripts": {
-    "dev": "cross-env NODE_ENV=online node build/dev-server.js",
-    "local": "cross-env NODE_ENV=local node build/dev-server.js",
+    "dev": "node build/dev-server.js",
+    "local": "node build/dev-server.js",
     "build": "node build/build.js"
   },
   "dependencies": {
