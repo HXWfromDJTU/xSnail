@@ -5,7 +5,7 @@ import {getStore} from '../config/mUtils'
  * 获取首页默认地址
  */
 
-export const getDouban = () => fetch('./data.json', {
+export const getDouban = () => fetch('/v1/cities', {
 	
 });
 

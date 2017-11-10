@@ -2,12 +2,12 @@
     <header id='head_top'>
         <slot name='logo'></slot>
         <slot name='search'></slot>
-        <section class="head_goback" v-if="goBack" @click="$router.go(-1)">
+        <section class="head_goback"  @click="$router.go(-1)">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <polyline points="12,18 4,9 12,0" style="fill:none;stroke:rgb(255,255,255);stroke-width:2"/>
             </svg>
         </section>
-        <router-link :to="userInfo? '/profile':'/login'" v-if='signinUp' class="head_login">
+        <router-link :to="userInfo? '/profile':'/login'"  class="head_login">
             <svg class="user_avatar" v-if="userInfo">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
             </svg>
@@ -24,28 +24,21 @@
 </template>
 
 <script>
-    import {mapState, mapActions} from 'vuex'
     export default {
     	data(){
             return{
-
+               userInfo:true,
+               headTitle:"xSnail"
             }
         },
         mounted(){
-            //获取用户信息
-            this.getUserInfo();
-
+            
         },
-        props: ['signinUp', 'headTitle', 'goBack'],
         computed: {
-            ...mapState([
-                'userInfo'
-            ]),
+          
         },
         methods: {
-            ...mapActions([
-                'getUserInfo'
-            ]),
+           
         },
 
     }
