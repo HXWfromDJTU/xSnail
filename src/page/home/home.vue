@@ -15,6 +15,8 @@
 	    		<span class="shop_header_title">附近商家</span>
 	    	</header>
     	</div>
+        <foot-guide>
+        </foot-guide>
     	
     </div>    
     </div>
@@ -22,6 +24,8 @@
 
 <script>
 import headTop from '../../components/header/head'
+import footGuide from '../../components/footer/footGuide'
+//getData()统一管理app的请求
 import {getDouban} from '../../service/getData'
 
 export default {
@@ -37,7 +41,8 @@ export default {
     },
 
     components:{
-        headTop
+        headTop,
+        footGuide
     },
 
     computed:{
