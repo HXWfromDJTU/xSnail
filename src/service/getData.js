@@ -5,17 +5,17 @@ import {getStore} from '../config/mUtils'
  * 获取首页默认地址
  */
 
-export const cityGuess = () => fetch('/v1/cities', {
-	type: 'guess'
-});
+// export const getDouban = () => fetch('./data.json', {
+	
+// });
 
 
 /**
  * 获取首页热门城市
  */
 
-export const hotcity = () => fetch('/v1/cities', {
-	type: 'hot'
+export const getDouban = () => fetch('http://live.bilibili.com/bili/recom?callback=liveXhrDone', {
+	
 });
 
 
