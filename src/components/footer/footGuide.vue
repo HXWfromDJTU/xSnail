@@ -24,7 +24,7 @@
         	<svg class="icon_style">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="$route.path.indexOf('msite') !== -1? '#msiteActive' : '#msite'"></use>
             </svg>
-            <span>外卖</span>
+            <span>鲜花</span>
         </section>
         <section @click = "gotoAddress({path: '/search/' + geohash})" class="guide_item">
         	<svg class="icon_style">

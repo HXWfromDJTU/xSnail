@@ -1,2 +1,4 @@
 # xSnail
-xSnail is A webapp using  vue2 + webapck+ es6
+##xSnail is A webapp
+## forntend : vue2 + webapck+ es6 
+## bakcend: egg + es6 
