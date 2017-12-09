@@ -1,0 +1,6 @@
+node_modules/
+run/
+logs/
+.idea/
+.vscode/
+tmp/
