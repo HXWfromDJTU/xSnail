@@ -9,7 +9,7 @@ module.exports = app => {
             *index() {
                 const { ctx, config } = this;
                 const req = ctx.request;  
-                    ctx.body = {masg:"hello xSnail"};
+                    ctx.body = {msg:"hello xSnail"};
             } 
         
      

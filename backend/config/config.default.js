@@ -5,13 +5,8 @@ const path = require('path');
 
 module.exports = appInfo => {
     const config = {};
-
     // should change to your own
     config.keys = appInfo.name + 'xSnail';
-
-
-
-
     config.redis = {
         clients: {
             session: {
@@ -46,18 +41,18 @@ module.exports = appInfo => {
         password: 'root',
     };
     config.view = {
-        defaultViewEngine: 'ejs',
+        defaultViewEngine: 'vue',
         defaultExtension: '.html',
         mapping: {
-            '.ejs': 'ejs',
-            '.html': 'ejs',
+            '.vue': 'vue',
+            '.html': 'vue',
         },
         cache: true,
     };
     config.security = {
         csrf: {
             enable: false,
-            ignoreJSON: true, // 默认为 false，当设置为 true 时，将会放过所有 content-type 为 `application/json` 的请求
+            ignoreJSON: true,
         },
     };
     //system config
@@ -78,7 +73,7 @@ module.exports = appInfo => {
     config.multipart = {
         autoFields: true,
         defaultCharset: 'utf8',
-        fileSize:  '10mb',
+        fileSize: '10mb',
         files: 15,
         fieldSize: '2000kb',
         fields: 80,

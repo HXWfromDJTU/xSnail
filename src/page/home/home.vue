@@ -12,8 +12,10 @@
     	<div class="shop_list_container">
 	    	<header class="shop_header">
 	    		
-	    		<span class="shop_header_title">附近商家</span>
+	    	 {{helloWord}}
 	    	</header>
+          
+           
     	</div>
         <foot-guide>
         </foot-guide>
@@ -31,13 +33,13 @@ import {getDouban} from '../../service/getData'
 export default {
     data(){
         return{
-            summary: ''
+            helloWord: ''
         }
     },
 
 	mounted(){
         getDouban().then(res => {
-                 console.log(res)
+                 this.helloWord = res.msg;
         })
     },
 
