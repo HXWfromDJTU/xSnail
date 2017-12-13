@@ -9,7 +9,7 @@
 2. $ npm run dev
 ```
 
-## bakcend: egg + es6 
+## backend: egg + es6 
 ### backend start up
 ```
 1. $ cd backend
