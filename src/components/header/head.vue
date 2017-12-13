@@ -3,12 +3,14 @@
         <slot name='logo'></slot>
         <slot name='search'></slot>
         <section class="head_goback"  @click="$router.go(-1)">
+          <!-- 返回 icon -->
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <polyline points="12,18 4,9 12,0" style="fill:none;stroke:rgb(255,255,255);stroke-width:2"/>
             </svg>
         </section>
         <!-- 检验是否登录，若已登录，则显示用户则显示用户资料入口，若未登录则显示 -->
         <router-link :to="userInfo? '/profile':'/login'"  class="head_login">
+             <!-- 用户头像icon -->
             <svg class="user_avatar" v-if="userInfo">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
             </svg>
