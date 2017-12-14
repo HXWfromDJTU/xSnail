@@ -1,10 +1,10 @@
 # xSnail
-```
-xSnail is a mixup web mobile app for ON Studio
 
 ```
+xSnail is a mixup SPA for ON Studio 
+```
 
-## forntend : vue2 + webapck + es6 + fetch + Vant 
+## forntend : vue2 + webapck + es6 + fetch + vue-router + Vant 
 ### frontend start up
 ```
 1. $ npm install
@@ -12,6 +12,7 @@ xSnail is a mixup web mobile app for ON Studio
 ```
 
 ## backend: egg + es6 
+    Using Egg framework as backend providing the data source API
 ### backend start up
 ```
 1. $ cd backend
