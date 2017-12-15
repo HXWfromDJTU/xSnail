@@ -26,3 +26,15 @@ xSnail is a mixup SPA for ON Studio
 2. $ redis-server
 ```
 
+Todos
+```
+第一周
+1、~~项目目录结构搭建~~
+2、~~首屏信息，请求联调测试~~
+3、根据 Vant UI组件 ，整理大致App原型图
+4、添加登录鉴权
+5、底部导航正常跳转切换
+
+第二周
+5、暂无 ( -_- )||
+```
