@@ -32,6 +32,13 @@
             "request": "attach",
             "restart": true,
             "port": 10086
+        },
+        {
+            "name": "Redis Setup",
+            "type": "node",
+            "request": "attach",
+            "restart": true,
+            "port": 10086
         }
     ],
     "compounds": [

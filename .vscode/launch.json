@@ -7,7 +7,7 @@
     "request": "launch",
     "cwd": "${workspaceRoot}",
     "runtimeExecutable": "npm",
-    "timeout": 100000,
+    "timeout": 1000000000,
     "protocol": "legacy",
     "windows": {
     "runtimeExecutable": "npm.cmd"

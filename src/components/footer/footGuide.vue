@@ -20,13 +20,13 @@
 
 	    	</defs>
     	</svg>
-        <section @click = "gotoAddress({path: '/msite', query: {geohash}})" class="guide_item">
+        <section @click = "gotoAddress({path: '/flower'})" class="guide_item">
         	<svg class="icon_style">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="$route.path.indexOf('msite') !== -1? '#msiteActive' : '#msite'"></use>
             </svg>
             <span>鲜花</span>
         </section>
-        <section @click = "gotoAddress({path: '/search/' + geohash})" class="guide_item">
+        <section @click = "gotoAddress({path: '/search/'})" class="guide_item">
         	<svg class="icon_style">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="$route.path.indexOf('search') !== -1? '#findActive' : '#find'"></use>
             </svg>
