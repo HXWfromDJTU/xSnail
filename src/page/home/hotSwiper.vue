@@ -1,7 +1,7 @@
 <template>
       <van-swipe :autoplay="3000">
                        <van-swipe-item v-for="image in swiperImages"><img :src="image.imageUrl"></van-swipe-item>
-               </van-swipe>
+       </van-swipe>
 </template>
 
 <script>
@@ -22,3 +22,12 @@ name:'hotSwiper',
   }
 };
 </script>
+<style scoped lang="scss">
+     .van-swipe{
+       height:200px;
+     }
+      .van-swipe img{
+        width:100%;
+       height:200px;
+     }
+</style>

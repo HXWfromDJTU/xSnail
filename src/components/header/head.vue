@@ -31,7 +31,7 @@
     	data(){
             return{
                userInfo:true,
-               headTitle:"xSnail"
+               headTitle:"ON Flower"
             }
         },
         mounted(){
@@ -50,9 +50,8 @@
 
 <style lang="scss" scoped>
     @import '../../style/mixin';
-
     #head_top{
-        background-color: $blue;
+        background-color: #211915;
         position: fixed;
         z-index: 100;
         left: 0;

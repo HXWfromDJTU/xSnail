@@ -1,5 +1,9 @@
 import App from '../App'
 //---todo  --了解require.ensure 的使用----
+// require.ensure(dependencies: String[], callback: function(require), chunkName: String)
+// 参数一： 所需要用到的模块进行声明，string数组形式
+// 参数二： 执行的回调函数
+// 参数三： chunkName 不同的模块进行 require.ensure()，使用相同的chunkName可以确保被打包到同一个bundle下
 const home = r => require.ensure([], () => r(require('../page/home/home')), 'home')
 const search = r => require.ensure([], () => r(require('../page/search/search')), 'search')
  const order = r => require.ensure([], () => r(require('../page/order/order')), 'order')

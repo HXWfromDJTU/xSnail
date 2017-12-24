@@ -72,7 +72,7 @@ export const getImgPath = {
 		getImgPath(path) {
 			let suffix;
 			if (!path) {
-				return 'http://test.fe.ptdev.cn/elm/elmlogo.jpeg'
+				return 'http://test.fe.ptdev.cn/xSnail/elmlogo.jpeg'
 			}
 			if (path.indexOf('jpeg') !== -1) {
 				suffix = '.jpeg'

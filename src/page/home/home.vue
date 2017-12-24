@@ -13,13 +13,11 @@
                <van-card v-for="item in hotSaleList"
   :title="item.title"
   :desc="item.desc"
-  :num="item.num"
   :price="item.price"
   :thumb="item.imageUrl"
 >
   <div slot="footer">
-    <van-button size="mini">按钮</van-button>
-    <van-button size="mini">按钮</van-button>
+    <van-tag mark type="danger">SALE</van-tag>
   </div>
 </van-card>
             </div>
@@ -85,5 +83,9 @@ export default {
 }
 .content_container{
   margin-top:0.4rem;
+}
+
+.van-card{
+  background-color:#e6e4e2;
 }
 </style>

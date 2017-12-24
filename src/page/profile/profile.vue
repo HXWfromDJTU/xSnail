@@ -1,18 +1,40 @@
 <template>
     <div>
     	<head-top signin-up='msite'>
-    		<router-link :to="'/search/' + geohash" class="link_search" slot="search">
-	    		<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	    			<circle cx="8" cy="8" r="7" stroke="rgb(255,255,255)" stroke-width="1" fill="none"/>
-	    			<line x1="14" y1="14" x2="20" y2="20" style="stroke:rgb(255,255,255);stroke-width:2"/>
-	    		</svg>
-    		</router-link>
 			<router-link to="/home" slot="msite-title" class="msite_title">
 				<span class="title_text ellipsis"></span>
 			</router-link>
     	</head-top>
     	<nav class="msite_nav">
-    		this is flower page
+    		 <img class="user-poster" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514139101140&di=0a4cf7fe08fb87f6fe0db23fcfe97bc3&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F201611_30_15%2Fa20g038805881369855.jpg">
+    <van-row class="user-links">
+      <van-col span="6">
+        <van-icon name="pending-payment" />
+        待付款
+      </van-col>
+      <van-col span="6">
+        <van-icon name="pending-orders" />
+        待接单
+      </van-col>
+      <van-col span="6">
+        <van-icon name="pending-deliver" />
+        待发货
+      </van-col>
+      <van-col span="6">
+        <van-icon name="logistics" />
+        待发货
+      </van-col>
+    </van-row>
+
+    <van-cell-group class="user-group">
+      <van-cell icon="records" title="全部订单" isLink />
+    </van-cell-group>
+
+    <van-cell-group>
+      <van-cell icon="exchange" title="我的积分" isLink />
+      <van-cell icon="gold-coin" title="我的优惠券" isLink />
+      <van-cell icon="gift" title="我收到的礼物" isLink />
+</van-cell-group>
     	</nav>
     
     	<foot-guide></foot-guide>
@@ -127,5 +149,24 @@ export default {
 			}
 		}
 	}
-
+.user {
+  &-poster {
+    width: 100%;
+    height: 6rem;
+    display: block;
+  }
+  &-group {
+    margin-bottom: .3rem;
+  }
+  &-links {
+    padding: 15px 0;
+    font-size: 12px;
+    text-align: center;
+    background-color: #fff;
+    .van-icon {
+      display: block;
+      font-size: 24px;
+    }
+  }
+}
 </style>
