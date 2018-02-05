@@ -43,3 +43,8 @@ Todos
 5、修改webpack生产环境打包 bug
 6、暂无 ( -_- )||
 ```
+
+参考资料
+[egg框架](https://eggjs.org/)
+[Vue.js官网](https://cn.vuejs.org/)
+[ZanUI官网](https://www.youzanyun.com/zanui)
