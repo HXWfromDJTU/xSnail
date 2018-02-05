@@ -26,7 +26,7 @@ sql startup
 2. $ redis-server
 ```
 
-Todos
+## Todos
 ```
 第一周
 1、项目目录结构搭建                       checked √
@@ -44,9 +44,9 @@ Todos
 6、暂无 ( -_- )||
 ```
 
-参考资料
-```
+## 参考资料
+
 [egg框架](https://eggjs.org/)
 [Vue.js官网](https://cn.vuejs.org/)
 [ZanUI官网](https://www.youzanyun.com/zanui)
-```
+
